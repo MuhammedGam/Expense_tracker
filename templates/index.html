@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+    <h1>Expense Overview</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for expense in expenses %}
+            <tr>
+                <td>{{ expense[0] }}</td>
+                <td>{{ expense[1] }}</td>
+                <td>{{ expense[2] }}</td>
+                <td>{{ expense[3] }}</td>
+                <td>{{ expense[4] }}</td>
+                <td>
+                    <form action="/delete/{{ expense[0] }}" method="post" style="display:inline;">
+                        <button type="submit">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
