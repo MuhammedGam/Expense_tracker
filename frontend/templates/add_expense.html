@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Add Expense{% endblock %}
+{% block content %}
+    <h1>Add Expense</h1>
+    <input type="text" id="description" placeholder="Description">
+    <input type="text" id="category" placeholder="Category">
+    <input type="number" id="amount" placeholder="Amount">
+    <input type="date" id="date">
+    <button id="addExpense">Submit</button>
+{% endblock %}

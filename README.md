@@ -65,3 +65,18 @@ Contributions are welcome! To contribute:
     *   Data export in various formats (CSV, PDF).
     *   Improved category management.
 
+## 📌 Overview
+Expense Tracker is a web application that helps users track their expenses, visualize financial insights, and manage budgets efficiently.
+
+## 🛠️ Tech Stack
+- **Backend**: Flask (Python)
+- **Database**: PostgreSQL 
+- **Frontend**: HTML, CSS, JavaScript
+- **Deployment**: Docker & Docker Compose
+
+## 🚀 Setup Guide
+
+### 1️⃣ Install Dependencies
+```sh
+pip install -r backend/requirements.txt
+cd frontend && npm install

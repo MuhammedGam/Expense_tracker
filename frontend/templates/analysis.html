@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}Expense Analysis{% endblock %}
+{% block content %}
+    <h1>Expense Analysis</h1>
+    <canvas id="expenseChart"></canvas>
+    <script src="{{ url_for('static', filename='chart.js') }}"></script>
+{% endblock %}

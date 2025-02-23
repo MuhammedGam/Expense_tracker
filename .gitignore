@@ -1,0 +1,23 @@
+# ملفات النظام
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+
+venv/
+env/
+
+
+docker-compose.override.yml
+database/
+
+
+node_modules/
+dist/
+.build/
+.DS_Store
+
+*.sqlite3
+*.db
+.env
